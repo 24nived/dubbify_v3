@@ -1,0 +1,266 @@
+.blog__how-to-dub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.blog__how-to-dub-content {
+    flex: 1;
+    max-width: 600px; /* Limit the width of the text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.blog__how-to-dub-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 1rem;
+    padding-left: 60px;
+
+}
+
+.blog__how-to-dub-content p {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 1rem 0;
+    padding-left: 60px;
+}
+
+.dubbing-steps {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    color: #f9f9f9;
+    margin-left: 60px;
+}
+
+.dubbing-steps li {
+    margin-bottom: 1.5rem; /* Space between items */
+    display: flex;
+    align-items: center;
+    background: rgba(213, 208, 208, 0.1); /* Light background for steps */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding around text */
+    transition: background 0.3s;
+}
+
+.dubbing-steps li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.step-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(89.97deg, #6b2ab0 1.84%, #ee7d40 102.67%);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.start-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid;
+    border-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%) 1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    padding-left: 60px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+.blog__how-to-dub-image {
+    flex: 1;
+    max-width: 700px; /* Limit the width of the image */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    margin-left: auto;
+    padding-right: 60px;
+    margin-top: 2rem;
+    
+}
+
+.blog__how-to-dub-image img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Adding some shadow to the image */
+}
+.gpt3__blog {
+    display: flex;
+    flex-direction: column;    
+}
+
+.gpt3__blog-heading {
+    width: 100%;
+    text-align: left;
+
+    margin-bottom: 5rem;
+}
+
+.gpt3__blog-heading h1 {
+    font-size: 62px;
+    line-height: 75px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+.gpt3__blog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__blog-container_groupA {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.gpt3__blog-container_groupB {
+    flex: 1;
+
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+
+@media screen and (max-width: 950px) {
+    .blog__how-to-dub {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .blog__how-to-dub-content {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .blog__how-to-dub-content h1 {
+        font-size: 28px;
+        padding-left: 0;
+        text-align: center;
+        word-wrap: break-word; /* Prevent text overflow */
+    }
+
+    .blog__how-to-dub-content p {
+        font-size: 14px;
+        padding-left: 0;
+        text-align: center;
+        word-wrap: break-word; /* Prevent text overflow */
+    }
+
+    .dubbing-steps {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .dubbing-steps li {
+        margin-bottom: 1rem;
+        justify-content: center;
+        padding: 10px;
+        width: 100%; /* Ensures steps take full width on smaller screens */
+        box-sizing: border-box; /* Prevents padding from causing overflow */
+    }
+
+    .step-circle {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .start-button {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .blog__how-to-dub-image {
+        padding-right: 0;
+        margin-top: 1rem;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog__how-to-dub-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        max-width: 100%;
+        object-fit: contain; /* Ensure the image fits properly */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blog__how-to-dub-content h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .blog__how-to-dub-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .dubbing-steps li {
+        padding: 8px;
+    }
+
+    .step-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .start-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+        .gpt3__blog-container {
+            flex-direction: column;
+        }
+    
+        .gpt3__blog-container_groupA,
+        .gpt3__blog-container_groupB {
+            width: 100%;
+        }
+    
+    
+}
+
+

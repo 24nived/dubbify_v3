@@ -1,0 +1,152 @@
+
+.gpt3__possibility {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__possibility-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+
+.gpt3__possibility-image img {
+    width: 90%;
+    height: 80%;
+}
+
+.gpt3__possibility-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.gpt3__possibility-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+}
+
+.gpt3__possibility-content h4:last-child {
+    color: #ff8A71;
+}
+
+.gpt3__possibility-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem 0;
+}
+
+.gpt3__possibility-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+    .gpt3__possibility {
+        flex-direction: column;
+    }
+
+    .gpt3__possibility-image {
+        margin: 1rem 0;
+    }
+
+    .gpt3__possibility-image img {
+        width: unset;
+        height: unset;
+    }
+
+    .gpt3__possibility-content {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__possibility-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dubbing-steps {
+    list-style: none; /* Remove default numbering */
+    padding-left: 0;  /* Remove default padding */
+    margin-top: 20px;
+    color:#71E5FF; /* Space above the list */
+    padding: left 10px;
+  }
+  
+  .dubbing-steps li {
+    margin-bottom: 1.5rem; /* Space between items */
+    display: flex;
+    align-items: center;
+    background: rgba(213, 208, 208, 0.1); /* Light background for steps */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding around text */
+    transition: background 0.3s; /* Smooth background transition */
+  }
+  
+  .dubbing-steps li:hover {
+    background: rgba(255, 255, 255, 0.3); /* Change background on hover */
+  }
+  
+  .step-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;     /* Fixed width */
+    height: 40px;    /* Fixed height */
+    background: linear-gradient(89.97deg, #6b2ab0 1.84%, #ee7d40 102.67%);
+    color: white;    /* Text color inside the circle */
+    border-radius: 50%;  /* Makes the shape a perfect circle */
+    margin-right: 10px;  /* Space between circle and text */
+    font-weight: bold;   /* Bold text for numbers */
+    font-size: 1.2rem;   /* Adjusted size for the number */
+    line-height: 1;      /* Ensure line-height does not affect the shape */
+    flex-shrink: 0;      /* Prevent the circle from shrinking */
+  }
+  
+  .step-text {
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Adjust text size */
+    color: #FFFFFF;  /* Text color */
+    line-height: 1.5; /* Improved line height for readability */
+    flex: 1; /* Allow text to take remaining space */
+  }
+
+  .start-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background for glass effect */
+    border: 2px solid; /* Border for the gradient */
+    border-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%) 1; /* Gradient border */
+    color: white; /* Text color */
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow to enhance the glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for glass */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.start-button:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly change transparency on hover */
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
